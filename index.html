@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tsedenya_Melaku Portfolio</title>
+  <link rel="stylesheet" href="Resource/mystyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/406b80bab2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header>
+      <div class="name">
+        <div><h1>Hello This is Tsedenya S. Melaku</h1></div>
+        <div id="main"><img src="Resource/images/Tsdii.jpg"></div>
+    </div>
+  </header>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Profile')" id="defaultOpen">Personal Profile</button>
+      <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+      <button class="tablinks" onclick="openTab(event, 'Work')">Work Exprience</button>
+      <button class="tablinks" onclick="openTab(event, 'Contact')">Contact Info</button>
+    </div>
+    
+    <div id="Profile" class="tabcontent">
+      <h2>Personal Profile</h2>
+      <p>I am a Goal oriented and adaptable professional with experience in Web Development and
+        Database Administration. Proactive communicator with ability to multitask and creatively 
+        approach problem solving. Team player motivated to increase abilities and make a positive 
+        impact on team projects.
+        </p>
+      
+    </div>
+    
+    <div id="Skills" class="tabcontent">
+      <h2>My Top Skills</h2>
+
+      
+          <p><i class="fa fa-lightbulb-o"></i> Creative</p>
+          <ul>
+            <li>
+
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-user-group"></i> Great Team Player</p>
+          <ul>
+            <li>
+              
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-bullseye-arrow"></i> Goal Oriented</p>
+          <ul>
+            <li>
+              
+            </li>
+          </ul>
+      
+          <img src="Resource/images/code_display.jpg">
+     </div>
+    
+    <div id="Work" class="tabcontent">
+      <h2>Work Exprience</h2>
+      
+      <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Companies</th>
+              <th>Years</th>
+              <th>Titles</th>
+              <th>Main Tasks</th>
+              <th>Addresses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Starbucks</td>
+              <td>November 2018 until Now part time</td>
+              <td>Shift Supervisor</td>
+              <td><ul>
+                <li>Maintain customer satisfaction while serving approximately 500 customers daily.</li>
+                <li>Supervise team of 5 employees per shift.</li>
+                </ul>
+                </td>
+              <td>Alexandria, VA 22314</td>
+            </tr>
+            <tr>
+              <td>Commercial Bank of Ethiopia </td>
+              <td>February 2015-Nov 2016</td>
+              <td>Junior Information Technology officer</td>
+              <td><ul>
+                <li>Collaborated   across   7   teams, to develop Enterprise   Resource Project that   would   
+                  automize procedures   and strategic information systems.</li>
+                <li>Developed Oracle   App   form   and report customization to ensure use of effective procurement module.</li>
+                </ul>
+                </td>
+              <td>Adiss Ababa, Ethiopia</td>
+            </tr>
+            <tr>
+              <td>Jupiter Trading</td>
+              <td>May 2014- February 2015</td>
+              <td>Web and Database Administrator</td>
+              <td><ul>
+                <li>Contributed   to   team   drafts   of documents and projects to aid web management. </li>
+                <li>Implemented   backup   system   to protect site from outages, data loss and data corruption.</li>
+                </ul>
+                </td>
+              <td>Adiss Ababa, Ethiopia</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      
+    </div>
+    <div id="Contact" class="tabcontent">
+      <div><h2>Contact Info</h2>
+        <a href="https://www.MelakuTsedenya@gmail.com"><i class="fas fa-at"> </i> MelakuTsedenya@gmail.com</a><br>
+        <p><br><i class="fa-solid fa-house"></i> Accokeek, MD</p><br>
+        <p><i class="fa-solid fa-mobile-screen-button"> </i>  +1 571 438 0519</p>
+      
+      <div class="image"><img src="Resource/images/contact.jpg"></div>
+    </div>
+  </div>
+    
+    <script>
+    function openTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
+    
+</body> 
+<footer>
+
+</footer>
+</html>
